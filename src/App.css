@@ -7,14 +7,30 @@
   pointer-events: none;
 }
 
+.blue {
+  background-color: blue;
+}
+
+.aqua {
+  background-color: aqua;
+}
+
+.picture {
+  height: 100px;
+  width: 100px;
+}
+
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
   }
 }
 
-.App-header {
+header{
   background-color: #282c34;
+}
+
+.App-header {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
