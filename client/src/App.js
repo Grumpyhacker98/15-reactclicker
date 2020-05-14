@@ -11,28 +11,28 @@ class App extends Component {
     images: [
       {
         name: "O'Neill",
-        // link: "./O'Neill.jpg",
+        link: "./O'Neill.jpg",
       }, {
         name: "Carter",
-        // link: "./Carter.jpg",
+        link: "./Carter.jpg",
       }, {
         name: "Jackson",
-        // link: "./Jackson.jpg",
+        link: "./Jackson.jpg",
       }, {
         name: "Teal'c",
-        // link: "./Teal'c.jpg",
+        link: "./Teal'c.jpg",
       }, {
         name: "Sheppard",
-        // link: "./Sheppard.jpg",
+        link: "./Sheppard.jpg",
       }, {
         name: "Teyla",
-        // link: "./Teyla.jpg",
+        link: "./Teyla.jpg",
       }, {
         name: "Ronon",
-        // link: "./Ronon.jpg",
+        link: "./Ronon.jpg",
       }, {
         name: "Mckay",
-        // link: "./Mckay.jpg",
+        link: "./Mckay.jpg",
       },
     ]
   }
