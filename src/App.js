@@ -51,7 +51,7 @@ class App extends Component {
         [shuffle[i], shuffle[j]] = [shuffle[j], shuffle[i]];
       }
 
-      this.setState({ score: 0, recorded: [], message: "Game OVER", images: shuffle})
+      this.setState({ score: 0, recorded: [], message: "Game OVER", images: shuffle })
 
     } else {
       let allRecord = this.state.recorded
