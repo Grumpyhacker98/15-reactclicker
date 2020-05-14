@@ -8,7 +8,7 @@ const publicPath = path.join(__dirname, 'public');
 const port = process.env.PORT || 3000;
 
 // app.use(express.static(publicPath));
-app.use('/static', express.static(path.join(__dirname, 'client/build')));
+app.use('/static', express.static(path.join(__dirname, 'public')));
 
 app.get('*', (req, res) => {
     res.sendFile(path.join(publicPath, 'index.html'));
