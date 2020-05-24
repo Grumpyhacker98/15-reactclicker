@@ -1,9 +1,16 @@
-import React from 'react';
+import React, { useState } from 'react';
+import placeholder from '../img/placeholder.png'
 
 function TarrotCard(props) {
 
+    const [state, setState] = useState(0)
+
     return (
-        <img src={props.src} alt={props.name}/>
+        <img
+            onClick={() => setState(!state)}
+            src={state ? props.src : placeholder}
+            alt={props.name}
+        />
     )
 }
 
