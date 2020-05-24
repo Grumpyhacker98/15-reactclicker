@@ -1,6 +1,9 @@
 import React, { Component } from 'react';
 import './App.css';
 import Navbar from './components/Navbar';
+import TarrotCard from './components/TarrotCard';
+
+import images from './img/CardImgFile'
 
 class App extends Component {
 
@@ -9,6 +12,12 @@ class App extends Component {
     topScore: 0,
     message: "Click to begin",
     recorded: [],
+    cards: [
+      // {
+      //   name: "tarot-chariot",
+      //   // img: chariot
+      // }
+    ]
     // images: [
     //   {
     //     name: "O'Neill",
@@ -103,7 +112,11 @@ class App extends Component {
       <div>
         <Navbar />
         <div>
-
+          {images.map((card) => (
+            <div key={card.id}>
+              < TarrotCard {...card} />
+            </div>
+          ))}
         </div>
       </div>
     );
