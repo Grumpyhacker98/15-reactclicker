@@ -10,6 +10,7 @@ function TarrotCard(props) {
             onClick={() => setState(!state)}
             src={state ? props.src : placeholder}
             alt={props.name}
+            className="tarot m-1"
         />
     )
 }

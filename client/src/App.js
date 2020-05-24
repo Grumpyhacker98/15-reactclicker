@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import './App.css';
+import './App.css'
 import Navbar from './components/Navbar';
 import TarrotCard from './components/TarrotCard';
 
@@ -52,8 +52,14 @@ class App extends Component {
   render() {
     return (
       <div>
-        <Navbar />
-        <div className="d-inline-flex">
+        {/* navbar/statusbar */}
+        <form className="form-inline">
+          <h2 className="p-2">Score: {this.state.score}</h2>
+          <h2 className="p-2">Top Score: {this.state.topScore}</h2>
+          <h2 className="p-2">{this.state.message}</h2>
+        </form>
+        {/* tarrot main container */}
+        <div className="d-inline-flex flex-wrap">
           {images.map((card) => (
             <TarrotCard {...card} key={card.id} />
           ))}
