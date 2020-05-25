@@ -1,6 +1,23 @@
+.deck{
+  position: absolute;
+}
+
 .tarot{
   height: 200px;
   width: 125px;
+  position: relative;
+}
+
+.front{
+  height: 200px;
+  width: 125px;
+  position: relative;
+}
+
+.back{
+  top: 0px;
+  left: 0px;
+  position: absolute;
 }
 
 /* .App {

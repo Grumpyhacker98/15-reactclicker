@@ -61,7 +61,9 @@ class App extends Component {
         {/* tarrot main container */}
         <div className="d-inline-flex flex-wrap">
           {images.map((card) => (
-            <TarrotCard {...card} key={card.id} />
+            <div key={card.id} className="border tarrot">
+              <TarrotCard {...card} />
+            </div>
           ))}
         </div>
       </div>
