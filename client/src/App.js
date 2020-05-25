@@ -48,6 +48,9 @@ class App extends Component {
   //   }
   // }
 
+  callback(data){
+    console.log(data)
+  }
 
   render() {
     return (
@@ -60,11 +63,12 @@ class App extends Component {
         </form>
         {/* tarot main container */}
         <div className="d-inline-flex flex-wrap justify-content-center">
-          {images.map((card) => (
-            <div key={card.id} className="border tarot">
-              <TarrotCard {...card} />
+          {images.map((card) => {
+            let prop = { card, this.callback()}
+            return <div key={card.id} className="border tarot">
+              <TarrotCard {...prop} />
             </div>
-          ))}
+          })}
         </div>
       </div>
     );

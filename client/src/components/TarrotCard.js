@@ -39,7 +39,7 @@ function TarrotCard(props) {
                 <img src={props.src} alt={props.name} />
             </div>
 
-            <div onClick={() => setState(false)}>
+            <div onClick={() => {setState(false)}}>
                 <img src={placeholder} alt={props.name}/>
             </div>
         </ReactCardFlip>
