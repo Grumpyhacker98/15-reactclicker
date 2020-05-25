@@ -35,12 +35,12 @@ function TarrotCard(props) {
         //     </a.div>
         // </div>
         <ReactCardFlip isFlipped={flip} flipDirection="vertical">
-            <div className="p-2" onClick={() => setState(true)}>
-                This is the front of the card.
+            <div onClick={() => setState(true)}>
+                <img src={props.src} alt={props.name} />
             </div>
 
-            <div className="p-2" onClick={() => setState(false)}>
-                This is the back of the card.
+            <div onClick={() => setState(false)}>
+                <img src={placeholder} alt={props.name}/>
             </div>
         </ReactCardFlip>
     )

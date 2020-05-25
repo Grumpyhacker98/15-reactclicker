@@ -58,10 +58,10 @@ class App extends Component {
           <h2 className="p-2">Top Score: {this.state.topScore}</h2>
           <h2 className="p-2">{this.state.message}</h2>
         </form>
-        {/* tarrot main container */}
-        <div className="d-inline-flex flex-wrap">
+        {/* tarot main container */}
+        <div className="d-inline-flex flex-wrap justify-content-center">
           {images.map((card) => (
-            <div key={card.id} className="border tarrot">
+            <div key={card.id} className="border tarot">
               <TarrotCard {...card} />
             </div>
           ))}
